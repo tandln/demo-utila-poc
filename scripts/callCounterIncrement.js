@@ -1,6 +1,6 @@
 import 'dotenv/config';
 import fs from 'fs';
-import { Interface, ethers } from 'ethers';
+import { Interface } from 'ethers';
 import utila from './utilaClient.js';
 
 const {
@@ -30,9 +30,9 @@ async function main() {
         toAddress: TO,
         data: data,
         value: "1",
-        gasLimit: "0x013880",            // 80000
-        maxFeePerGas: "0x59682f00",      // 1.5 gwei
-        maxPriorityFeePerGas: "0x3b9aca00" // 1 gwei
+        gasLimit: "0x013880",            // 31,989
+        maxFeePerGas: "0x59682f00",      // 0.001050011  gwei
+        maxPriorityFeePerGas: "0x3b9aca00" // 0.001050001 gwei
       }
     },
     note: "Token Approval",
